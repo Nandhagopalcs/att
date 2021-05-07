@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div style="text-align: center;">
+    <form action="{{ url_for('sigup')}}" id="yform"  method="POST">
+        <label for="age">Personal Id:</label>
+        <input type="number" id="id_number" name="a_id" min="10000" max="99999" placeholder="00000" required><br><br>      
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="a_name" placeholder="Name"><br><br>
+        <label for="age">create college Id:</label>
+        <input type="number" id="id_number" name="c_id" min="10000" max="99999" placeholder="00000" required><br><br>
+        <label for="fname">college Name:</label>
+        <input type="text" id="fname" name="c_name" placeholder="Name"><br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd"><br><br>
+
+        <input type="submit" />
+    </form>
+
+</body>
+</html>

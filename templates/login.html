@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            background-color: #5b5ba1;
+        }
+        </style>
+</head>
+<body>
+    <div style="text-align: center;">
+    <form action="{{ url_for('login')}}" id="mform"  method="POST">
+        <label for="age">Personal Id:</label>
+        <input type="number" id="id_number" name="check_id" min="100"  placeholder="00000" required><br><br>      
+        <label for="fname">Password:</label>
+        <input type="password" id="fname" name="check_name" placeholder="Name"><br><br>
+        <input type="submit" />
+    </form>
+    </div>
+
+    <div>
+        <a href="{{'signup'}}">create a admin account</a>
+    </div>
+    <div>
+    {% if s== 1 %}
+    <h3>Invalid password or id</h3>
+    {% endif%}
+    </div>
+
+
+</body>
+</html>
